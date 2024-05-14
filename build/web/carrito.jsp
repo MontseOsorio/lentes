@@ -114,6 +114,7 @@
                 // Datos de ejemplo
  var totalGeneral=0;
                 var rutaJson = "http://localhost:8080/SMARTH_GLASSES/RESOURSES/catalogo-lentes_1.json";
+                //var rutaJson = "https://montseosorio.github.io/lentes/RESOURSES/catalogo-lentes_1.json";
                 var listaProductos = [];
                 var solicitud = new XMLHttpRequest();
                 solicitud.open('GET', rutaJson, true);

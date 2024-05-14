@@ -81,7 +81,7 @@
             <div class="navbar-right">
                 <a href="registrar.html"><i class="fas fa-user"></i></a>
 
-                <a href="ofertas-dia.jsp"><i class="fas fa-tags"></i></a>
+                <a href="catalogo_modelo_ofertas.html"><i class="fas fa-tags"></i></a>
             </div>
         </nav>
         <br>
@@ -107,13 +107,13 @@
 
 
 
-            <img id="imagen-vacia" src="IMG/FHsVhJ6hJV.gif" alt="Lista vacÌa">
+            <img id="imagen-vacia" src="IMG/FHsVhJ6hJV.gif" alt="Lista vac√≠a">
             <p id="mensaje-vacio" class="mensaje-vacio">No hay productos disponibles</p>
 
             <script>
                 // Datos de ejemplo
  var totalGeneral=0;
-                var rutaJson = "http://localhost:8080/SMARTH_GLASSES/RESOURSES/catalogo-lentes_1.json";
+                var rutaJson = "RESOURSES/catalogo-lentes_1.json";
                 //var rutaJson = "https://montseosorio.github.io/lentes/RESOURSES/catalogo-lentes_1.json";
                 var listaProductos = [];
                 var solicitud = new XMLHttpRequest();
@@ -153,14 +153,14 @@
                 solicitud.send();
 
 
-                // FunciÛn para mostrar la lista de productos
+                // Funci√≥n para mostrar la lista de productos
                 function mostrarProductos() {
                     var contenedorProductos = document.getElementById("contenedor-productos");
                     contenedorProductos.innerHTML = ""; // Limpiar el contenido anterior
 
                     var total = 0; // Inicializar el total a pagar
 
-                    // Verificar si la lista de productos est· vacÌa
+                    // Verificar si la lista de productos est√° vac√≠a
                     if (listaProductos.length === 0) {
                         document.getElementById("imagen-vacia").style.display = "block";
                         document.getElementById("mensaje-vacio").style.display = "block";
@@ -233,7 +233,7 @@
                     }
                 }
                
-                // FunciÛn para actualizar el total a pagar en el HTML
+                // Funci√≥n para actualizar el total a pagar en el HTML
                 function actualizarTotal(total) {
                     var spanTotal = document.getElementById("total-a-pagar");
                     spanTotal.textContent = total;
@@ -242,7 +242,7 @@
 
 
 
-                // Agregar evento al botÛn de pagar
+                // Agregar evento al bot√≥n de pagar
                 var botonPagar = document.getElementById("boton-pagar");
                 botonPagar.addEventListener("click", function () {
                    

@@ -38,18 +38,33 @@
 </head>
 <body>
     <div class="container">
-        <h1>Recibo de Pago</h1>
+        <div class="navbar-center">
+            <a class="navbar-brand" href="index.html"><img src="assets/img/logoNegro.jpg" alt="Logo" style="width: 70px"></a>
+    </div>
+
+        <div class="container">
+         <h1>Recibo de Pago</h1>   
+        </div>
+        
         <div class="info">
             <h2>Detalles del Pago</h2>
-            <p><strong>Concepto:</strong> Compra de productos</p>
-            <p><strong>Monto:</strong><span id="miSpan"></span></p>
-            <p><strong>Fecha:</strong> 9 de Mayo 2024</p>
+             <p><strong>Folio: <span id="folio"></span></strong></p>
+            <p><strong>Concepto:</strong> Compra de lentes inteligentes</p>
+            <p><strong>Monto:$</strong><span id="miSpan"></span></p>
+         <p><strong>Fecha:</strong> <span id="fecha"></span></p>
         </div>
         <div class="barcode">
             <h2>Código de Barras</h2>
             <!-- Agregar el código de barras aquí -->
             <svg id="barcode"></svg>
         </div>
+        <div style="display: flex;">
+    <a class="navbar-brand" href="#"><img src="assets/img/oxxo.png" alt="Logo" style="width: 70px"></a>
+    <div style="width: 5px;"></div> <!-- Menos espacio horizontal -->
+   <img src="assets/img/aurrera.png" alt="Logo" style="height: auto; width: 70px;">
+   <div style="width: 5px;"></div> <!-- Menos espacio horizontal -->
+   <img src="assets/img/walmart.png" alt="Logo" style="height: auto; width: 70px;">
+</div>
         <!-- Enlace para imprimir el recibo -->
         <a href="#" class="print-link" onclick="printReceipt()">Imprimir Recibo</a>
     </div>
@@ -77,5 +92,33 @@
         miSpan.textContent = jsonprecio.total;
         console.log(jsonprecio);
     </script>
+    <script>
+    // Función para generar un número de folio aleatorio
+    function generarFolio() {
+        // Generar un número aleatorio de 6 dígitos
+        var folio = Math.floor(Math.random() * 900000) + 100000;
+        return folio;
+    }
+
+    // Obtener el elemento del span donde se mostrará el folio
+    var spanFolio = document.getElementById("folio");
+
+    // Generar un folio al cargar la página
+    spanFolio.textContent = generarFolio();
+</script>
+<script>
+    // Obtener el elemento del span donde se mostrará la fecha
+    var spanFecha = document.getElementById("fecha");
+
+    // Obtener la fecha actual
+    var fechaActual = new Date();
+
+    // Formatear la fecha en el formato deseado (día de la semana, día, mes y año)
+    var opcionesFecha = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    var fechaFormateada = fechaActual.toLocaleDateString('es-ES', opcionesFecha);
+
+    // Mostrar la fecha en el span correspondiente
+    spanFecha.textContent = fechaFormateada;
+</script>
 </body>
 </html>

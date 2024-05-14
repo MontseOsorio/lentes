@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -32,8 +36,8 @@
                     <!-- Las funciones desplegables para cada boton de tienda en linea y mas  -->
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#portfolio"><i class="fas fa-heart"></i> Smarth Glasses</a></li>
-                        <li class="nav-item"><a class="nav-link" href="modelos_1.jsp"><i class="fas fa-glasses"></i> Catálogo</a></li>
-                        <li class="nav-item" id="navCarrito"><a class="nav-link" href="carrito.jsp"><i class="fas fa-shopping-bag"></i> Mi carrito</a></li>
+                        <li class="nav-item"><a class="nav-link" href="catalogo_modelo.html"><i class="fas fa-glasses"></i> Catálogo</a></li>
+                        <li class="nav-item" id="navCarrito"><a class="nav-link" href="carrito_sg.html"><i class="fas fa-shopping-bag"></i> Mi carrito</a></li>
                         <li class="nav-item"><a class="nav-link" href="registrar.html"><i class="fas fa-user"></i>Login</a></li>
 
                     </ul>
@@ -117,11 +121,72 @@
             <h2 class="section-heading text-uppercase" style="text-align: center">UBICACIÓN</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.048707917771!2d-100.39457792600453!3d20.58614630283601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d344d5014db0e7%3A0x166a1b8226aba36f!2sLucas%20Alam%C3%A1n%2C%20Centro%2C%2076000%20Santiago%20de%20Quer%C3%A9taro%2C%20Qro.!5e1!3m2!1ses-419!2smx!4v1715052555367!5m2!1ses-419!2smx" width="1100" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <br>           
+        <br>     
+        <br>
+         <br>     
+        <br>
 
+       <!-- COMENTARIOS -->
+       <h2 class="section-heading text-uppercase" style="text-align: center">Comentarios de nuestros clientes</h2>
+        <br>     
+        <br>
+        <div class="container">
+       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="comentario">
+                <img src="assets/img/usuario1.jpg" alt="Foto de usuario">
+                <br>
+                <div class="info-usuario">
+                    <h3>Isaac Arriaga Garcia</h3>
+                    <p>¡Acabo de comprar estos lentes inteligentes y estoy realmente impresionado! La tecnología es increíble y la calidad de construcción es excelente. </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="comentario">
+                <img src="assets/img/usuario2.jpg" alt="Foto de usuario">
+                <div class="info-usuario">
+                    <h3>Montse Osorio</h3>
+                    <p>Me encanta cómo puedo acceder a información útil y recibir notificaciones de manera discreta mientras los uso. La función de realidad aumentada es asombrosa</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="comentario">
+                <img src="assets/img/usuario3.jpg" alt="Foto de usuario">
+                <div class="info-usuario">
+                    <h3>Marco Antonio</h3>
+                    <p>Definitivamente recomiendo estos lentes inteligentes a cualquiera que esté interesado en la tecnología avanzada y la comodidad en el día a día."</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+    </a>
+</div>
+            </div>
 
+<br>
+        <br>
+        <br>
+        <br>
 
-
+          <br>
 
         <!-- Contact-->
         <section class="page-section" id="contact">
@@ -187,7 +252,17 @@
                     <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar</button></div>
                 </form>
             </div>
+            
+        
+           
+               
+           
         </section>
+        
+        
+        <br>
+        <br>
+        <br>
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
@@ -199,8 +274,8 @@
                         <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/smarth_glasses/?igsh=MTNoejVjMmN1ZTZqeg%3D%3D&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                     <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Politicas de privacidad</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terminos de usos</a>
+                        <a class="link-dark text-decoration-none me-3" href="#!">Aviso de privacidad</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terminos y condiciones</a>
                     </div>
                 </div>
             </div>
@@ -217,12 +292,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Misión</h2>
-                                    <p style="text-align: justify;" class="item-intro text-muted">En Smarth Glasses nuestra misión es impulsar una
-                                        revolución en la conectividad humana al ofrecer lentes inteligentes que van más allá de 
-                                        la percepción tradicional. Nos esforzamos por crear una experiencia donde la realidad y la virtualidad se fusionen, permitiendo 
-                                        a las personas estar siempre conectadas, sin importar dónde se encuentren. Estamos comprometidos a liderar el camino hacia un mundo donde la
-                                        comunicación sea más fluida y la innovación sea constante. Nuestros lentes no solo son un accesorio,
-                                        son la puerta de entrada a un futuro de conexión. </p>
+                                    <p style="text-align: justify;" class="item-intro text-muted">
+                                        Una revolución en la conectividad que va más allá de la percepción tradicional, además estamos comprometidos a ofrecer la mejor experiencia en virtualidad. Nuestros lentes no solo son un accesorio, son la puerta de entrada a un futuro de conexión
+                                    </p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Cerrar Misión
@@ -245,11 +317,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Visión</h2>
-                                    <p style="text-align: justify;" class="item-intro text-muted"> En Smarth Glasses nuestra visión es redefinir la
-                                        manera en que experimentamos el mundo, proyectando  un futuro donde la tecnología no solo nos conecta, 
-                                        sino que nos une,  Con nuestros lentes inteligentes, estamos creando una nueva realidad donde la distancia no es un obstáculo, la comunicación es 
-                                        instantánea y  donde la visión va más allá de lo que los ojos pueden ver. Nos esforzamos por ser pioneros en la creación para poder llevar a un mundo
-                                        de información,  comunicación y experiencia, en un solo par de lentes.</p>
+                                    <p style="text-align: justify;" class="item-intro text-muted"> 
+                                        En Smart Glasses, nuestra visión es ser una empresa donde no exista ningún obstáculo para crear conectividad, y donde la visión va más allá de lo que los ojos pueden ver.
+                                     </p>
 
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
@@ -276,13 +346,12 @@
 
 
                                     <p style="text-align: justify;">
-                                        1.-Innovación: Compromiso con la constante búsqueda de nuevas tecnologías y soluciones avanzadas para ofrecer productos líderes en el mercado.
-                                        2.-Calidad: Garantía de excelencia en la fabricación de lentes inteligentes, asegurando la durabilidad, confiabilidad y funcionalidad de cada producto.
-                                        3.-Privacidad y discreción: Compromiso absoluto con la protección de la privacidad del usuario, ofreciendo funciones de toma de llamadas de manera discreta
-                                        y respetando la confidencialidad de la información personal.
-                                        4.-Integridad: Actuar con honestidad y transparencia en todas las interacciones comerciales y relaciones con los clientes, socios y empleados.
-                                        5.-Servicio al cliente: Enfoque centrado en el cliente, brindando un excelente servicio 
-                                    </p>
+                                    <ol class="lista">
+    <p>1.- Innovación: Compromiso con la constante búsqueda de nuevas tecnologías y soluciones avanzadas para ofrecer productos líderes en el mercado.</p>
+    <p>2.- Calidad: Garantía de excelencia en la fabricación de lentes inteligentes, asegurando la durabilidad, confiabilidad y funcionalidad de cada producto, y respetando la confidencialidad de la información personal.</p>
+    <p>3.- Integridad: Actuar con honestidad y transparencia en todas las interacciones comerciales y relaciones con los clientes, socios y empleados.</p>
+    <p>4.- Empatía con el cliente: Comprender y compartir los sentimientos y experiencias de los demás.</li>
+</ol>
 
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
@@ -401,7 +470,7 @@
             </div>
         </div>
         <script>
-            var rutaJson = "http://localhost:8080/SMARTH_GLASSES/RESOURSES/usuarios.json";
+            var rutaJson = "RESOURSES/usuarios.json";
             var usuarios = [];
             var solicitud = new XMLHttpRequest();
             solicitud.open('GET', rutaJson, true);

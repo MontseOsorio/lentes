@@ -11248,3 +11248,53 @@ section#contact form#contactForm :-ms-input-placeholder {
     padding: 0;
     box-sizing: border-box;
 }
+.lista {
+    text-align: justify;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-left: 20px;
+    list-style-type: decimal;
+    counter-reset: numero;
+    font-style: italic; /* Aplica estilo cursiva a todo el texto de la lista */
+    margin-bottom: 2rem; /* Espacio entre la lista y otros elementos */
+}
+
+.lista li {
+    counter-increment: numero;
+    margin-bottom: 10px;
+}
+
+.lista li:before {
+    content: counter(numero) ". ";
+    font-weight: bold;
+}
+/* Estilos para el carrusel */
+.carousel {
+    margin-top: 20px;
+}
+
+/* Estilos para los indicadores del carrusel */
+.carousel-indicators li {
+    background-color: #888; /* Color de fondo de los indicadores */
+}
+
+/* Estilos para los comentarios */
+.comentario {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.comentario img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Para que la foto de usuario tenga forma circular */
+    margin-right: 10px;
+}
+
+.info-usuario h3 {
+    margin-bottom: 5px;
+}
+
+.info-usuario p {
+    margin: 0;
+}

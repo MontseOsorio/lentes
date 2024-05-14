@@ -74,11 +74,25 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 <div id="formularioTarjeta" class="formulario-tarjeta">
     <br>
     <br>
-    <h3 style="text-align: center">Formulario de Pago con Tarjeta</h3>
-  <input type="text" placeholder="Nombre en la Tarjeta">
-  <input type="text" placeholder="Número de Tarjeta">
-  <input type="text" placeholder="Fecha de Expiración">
-  <input type="text" placeholder="CVV">
+     <h1>Formulario de Pago con Tarjeta de Crédito</h1>
+    <form action="/procesar_pago" method="post">
+        <label for="nombre">Nombre en la Tarjeta:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="numero_tarjeta">Número de Tarjeta:</label>
+        <input type="text" id="numero_tarjeta" name="numero_tarjeta" required><br><br>
+        
+        <label for="fecha_vencimiento">Fecha de Vencimiento:</label>
+        <input type="text" id="fecha_vencimiento" name="fecha_vencimiento" placeholder="MM/AA" required><br><br>
+        
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" placeholder="Código de seguridad" required><br><br>
+        
+        <label for="monto">Monto a Pagar:</label>
+        <input type="text" id="monto" name="monto" required><br><br>
+        
+        
+    </form>
   
   <a href="#" class="btn btn-primary" onclick="procesarPago()">Procesar Pago</a>
 </div>
@@ -112,7 +126,7 @@ function procesarPago() {
 
 function descargarRecibo() {
       window.location.replace("efectivo.html");
-  alert("Recibo de pago descargado");
+  alert("Smart Glasses agradece tu preferencia, da click para continuar");
 }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,50 @@
+[
+   {
+       "id":1,
+      "img":"assets/img/L1.jpg",
+      "nombreProducto":"Light marc",
+      "precio":1800.00,
+      "descripcion":"Estos lentes inteligentes ofrecen una experiencia de realidad aumentada avanzada, permitiendo tomar llamadas, proyectar hologramas interactivos y navegar por interfaces de usuario intuitivas.",
+      "calificacion":"8"
+   },
+   {
+       "id":2,
+      "img":"assets/img/L2.jpg",
+      "nombreProducto":"Litter glass",
+      "precio":2000.00,
+      "descripcion":"Con una combinaci\u00F3n de tecnolog\u00EDa hologr\u00E1fica y capacidades de comunicaci\u00F3n avanzada, estos lentes proporcionan una experiencia inmersiva. Adem\u00E1s de tomar llamadas, ofrecen la posibilidad de crear y manipular hologramas en 3D.",
+      "calificacion":"9"
+   },
+   {
+        "id":3,
+      "img":"assets/img/L3.jpg",
+      "nombreProducto":"Glass luminate",
+      "precio":5000.00,
+      "descripcion":"Con una elegante interfaz de usuario y una tecnolog\u00EDa hologr\u00E1fica de vanguardia, estos lentes inteligentes son ideales para el entretenimiento y la productividad. Adem\u00E1s de tomar llamadas, permiten disfrutar de juegos y aplicaciones en realidad aumentada.",
+      "calificacion":"9.5"
+   },
+   {
+        "id":4,
+      "img":"assets/img/L4.jpg",
+      "nombreProducto":"Gold glasses",
+      "precio":6000.00,
+      "descripcion":"Gafas inteligentes, elegantes, con tecnol\u00F3gia compatible,toma llamadas,genera hologramas en tiempo real",
+      "calificacion":"10"
+   },
+   {
+         "id":5,
+      "img":"assets/img/L5.jpg",
+      "nombreProducto":"Golden hexagon",
+      "precio":6000.00,
+      "descripcion":"Gafas inteligentes, con inteligencia de luz solar, toma llamadas, graduado, generacion de hologramas,graduados,actividad bluerey",
+      "calificacion":"10"
+   },
+   {
+         "id":6,
+      "img":"assets/img/L6.jpg",
+      "nombreProducto":"Glass bottle",
+      "precio":4000.00,
+      "descripcion":"Equipados con tecnolog\u00EDa hologr\u00E1fica de vanguardia y capacidades de comunicaci\u00F3n avanzada, estos lentes inteligentes son una herramienta imprescindible para profesionales creativos y entusiastas de la tecnolog\u00EDa. Desde hacer llamadas hasta crear y manipular hologramas, ofrecen infinitas posibilidades de exploraci\u00F3n y colaboraci\u00F3n.",
+      "calificacion":"8"
+   }
+]
