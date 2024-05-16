@@ -25,6 +25,7 @@
                 width: 60%;
                 margin-right: 10%;
             }
+            
 
             .card-info {
                 flex-grow: 1;

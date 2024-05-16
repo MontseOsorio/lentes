@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recibo de Pago</title>
+    <title>Comprobante del pago</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,7 +42,7 @@
     </div>
 
         <div class="container">
-         <h1>Recibo de Pago</h1>   
+         <h1>Comprobante del pago</h1>   
         </div>
         
         <div class="info">
@@ -52,39 +51,24 @@
             <p><strong>Concepto:</strong> Compra de lentes inteligentes</p>
             <p><strong>Monto:$</strong><span id="miSpan"></span></p>
          <p><strong>Fecha:</strong> <span id="fecha"></span></p>
+         <p>Pago exitoso</p>
         </div>
-        <div class="barcode">
-            <h2>Código de Barras</h2>
-            <!-- Agregar el código de barras aquí -->
-            <svg id="barcode"></svg>
-        </div>
-        <div style="display: flex;">
-    <a class="navbar-brand" href="#"><img src="assets/img/oxxo.png" alt="Logo" style="width: 70px"></a>
-    <div style="width: 5px;"></div> <!-- Menos espacio horizontal -->
-   <img src="assets/img/aurrera.png" alt="Logo" style="height: auto; width: 70px;">
-   <div style="width: 5px;"></div> <!-- Menos espacio horizontal -->
-   <img src="assets/img/walmart.png" alt="Logo" style="height: auto; width: 70px;">
-</div>
+       
+        
         <!-- Enlace para imprimir el recibo -->
-        <a href="#" class="print-link" onclick="printReceipt()">Imprimir Recibo</a>
+        <a href="#" class="print-link" onclick="printReceipt()">Imprimir comprobante de pago</a>
     </div>
 
     <!-- Librería JsBarcode para generar códigos de barras -->
     <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3/dist/JsBarcode.all.min.js"></script>
     <script>
-        // Generar el código de barras utilizando JsBarcode
-        JsBarcode("#barcode", "123456789", {
-            format: "CODE128",
-            displayValue: false
-        });
-
+       
         // Función para imprimir el recibo
         function printReceipt() {
             // Llamar a la función window.print() para abrir el cuadro de diálogo de impresión de Windows
             window.print();
             localStorage.removeItem("carrito");
               localStorage.removeItem("pago");
-
         }
         var miSpan = document.getElementById("miSpan");
 

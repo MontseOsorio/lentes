@@ -82,6 +82,9 @@
         function printReceipt() {
             // Llamar a la función window.print() para abrir el cuadro de diálogo de impresión de Windows
             window.print();
+            localStorage.removeItem("carrito");
+              localStorage.removeItem("pago");
+
         }
         var miSpan = document.getElementById("miSpan");
 
